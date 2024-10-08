@@ -1,0 +1,31 @@
+import java.util.*;
+class ArrayExample{
+    void searchInArray() {
+        int[] arr = {10, 45, 3, 8, 9, 12, 58};
+        Scanner sc = new Scanner(System.in);
+        int x = sc.nextInt();
+        int ans = -1;
+        for (int i = 0; i < arr.length; i++) {
+            if (arr[i] == x) {
+                ans = i;
+                break;
+            }
+        }
+        if(ans==-1){
+            System.out.println("not found");
+        }else {
+            System.out.println("Found " + x + "at index" + ans);
+        }
+    }
+}
+
+
+
+public class LinearSearch{
+    public static void main(String[] args) {
+        ArrayExample objj7=new ArrayExample();
+        objj7.searchInArray();
+
+
+    }
+}
